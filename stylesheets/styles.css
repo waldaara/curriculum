@@ -72,3 +72,66 @@ section {
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    transition: 1s;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+footer ul {
+    text-align: center;
+}
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;
+    row-gap: 0.5rem;
+
+}
+
+#resumen {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;
+
+    /* Distribuye el espacio entre y alrededor
+             de los items en el eje principal */
+    justify-content: space-around;
+
+    /* Alineación de un elemento dentro del bloque
+        que lo contiene, considerando el eje transversal */
+    align-items: stretch;
+
+    /* Plantilla con áreas en la cuadrícula */
+    grid-template-areas: "A D"
+        "B D";
+}
+
+#resumen h2 {
+    grid-area: A;
+}
+
+#resumen p {
+    grid-area: B;
+}
+
+#resumen img {
+    grid-area: D;
+}
