@@ -1,171 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="CV, David Aragundy, Portfolio" />
+    <meta name="description" content="David Aragundy's CV and Portfolio" />
+    <meta name="author" content="David Aragundy" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="CV,Curriculum">
-    <meta name="author" content="David Aragundy">
-    <meta name="description" content="Best CV ever!">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="icon" href="images/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@3.4.14/src/css/preflight.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <title>Curriculum</title>
-</head>
+    <title>David Aragundy</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>David Aragundy</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/your-name">LinkedIn</a></li>
-                <li>as</li>
-                <li>as</li>
-                <li>as</li>
-                <li>as</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-
-        <section id="resumen">
-            <h2 class="subtitle">Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-            <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
-        </section>
-
-        <section>
-            <h2 class="subtitle">Experiencia Laboral</h2>
-
-            <ul>
-                <li>Escuela Superior Politécnica del Litoral</li>
-
-                <ul>
-                    <li>Teaching Assistant - Programming Fundamentals
-                        <br>
-                        <small>septiembre de 2024 - Present (2 meses)</small>
-                        <br>
-                        <small>Guayaquil, Guayas, Ecuador</small>
-                        <br>
-                        <p>In charge of teaching and offering consultations on Programming
-                            Fundamentals, helping students learn to code and develop programming logic</p>
-                    </li>
-
-                    <li>Teaching Assistant - Vector Calculus
-                        <br>
-                        <small>mayo de 2024 - octubre de 2024 (6 meses)
-                        </small>
-                        <br>
-                        <small>Guayaquil, Guayas, Ecuador</small>
-                        <br>
-                        <p>Responsible for teaching classes and consultations related to Vector Calculus.
-                            Providing direct support to students in understanding and applying key
-                            concepts, as well as solving advanced problems.</p>
-                    </li>
-
-                    <li>Administrative Assistant - Undergraduate Dean's Office
-                        <br>
-                        <small>septiembre de 2023 - mayo de 2024 (9 meses)
-                        </small>
-                        <br>
-                        <small>Guayaquil, Guayas, Ecuador</small>
-                        <br>
-                        <p>Responsible for developing features in Flutter for academic assistantships
-                            within the ESPOL mobile application, 'Mi ESPOL'.</p>
-                    </li>
-                </ul>
-            </ul>
-        </section>
-
-        <section>
-            <h2 class="subtitle">Educación</h2>
-
-            <img id="photo" src="https://placehold.co/600x400" alt="photo">
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Empresa</th>
-                        <th>Puesto</th>
-                        <th>Años de experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Acme Corporation</td>
-                        <td>Desarrollador web</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-        <section>
-            <h2>Section title</h2>
-
-            <div id="map" style="height: 400px;"></div>
-
-            <script>
-                var map = L.map('map').setView([51.505, -0.09], 13);
-
-                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                }).addTo(map);
-            </script>
-        </section>
-        <section>
-            <h2>Section title</h2>
-
-            <form>
-                <label for="email">
-                    Email:
-                    <input type="email" name="email" id="email">
-                </label>
-
-                <label for="team">
-                    Fav football team:
-                    <select name="team" id="team">
-                        <option value="barca">Barca</option>
-                        <option disabled value="madrid">Madrid 💩</option>
-                    </select>
-                </label>
-
-                <label for="yap">
-                    Just yap:
-
-                    <textarea name="yap" id="yap"></textarea>
-                </label>
-
-                <label for="blue">
-                    Blue:
-                    <input type="radio" name="color" id="blue" value="blue">
-                </label>
-
-                <label for="black">
-                    Black
-                    <input type="radio" name="color" id="black" value="black">
-                </label>
-
-                <div>
-                    <input type="checkbox" name="habilidades" value="HTML" />
-                    <span>HTML</span>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>2024 - Todos los derechos reservados</p>
+      <nav>
         <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </footer>
-</body>
+      </nav>
+    </header>
 
+    <main>
+      <section id="home">
+        <div id="home-left-container">
+          <!-- <img src="/images/home.svg" alt="Home" /> -->
+        </div>
+
+        <div id="home-right-container">
+          <div id="home-right-subcontainer">
+            <span>Hi, I'm David 👋</span>
+
+            <h2>Software engineer</h2>
+
+            <p>
+              I am a resilient individual passionate about continuous learning
+              and dedicated to technology and exact sciences.
+            </p>
+
+            <a href="#skills">My skills 🔥</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills 🤮</h2>
+
+        <div id="skills-container">
+          <div class="skill-card">
+            <span>Front-end 🥵</span>
+
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Tailwind</li>
+              <li>Next.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <span>Back-end 💀</span>
+
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>GraphQL</li>
+              <li>Nest.js</li>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+              <li>MongoDB</li>
+              <li>Drizzle</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <span>Testing 💩</span>
+
+            <ul>
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>Vitest</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects 🥸</h2>
+
+        <div id="projects-container">
+          <div class="project-card">
+            <img src="images/project-1.png" alt="Project 1" />
+
+            <div class="project-card-info">
+              <h3>Stories</h3>
+
+              <p>
+                Stories is an open source social media platform similar to
+                Twitter that preserves all content generated on the platform
+                (posts, comments and chats) for only 24 hours.
+              </p>
+
+              <a href="https://stories.aragundy.com" target="_blank"
+                >View project</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-2.png" alt="Project 2" />
+
+            <div class="project-card-info">
+              <h3>David Aragundy</h3>
+
+              <p>
+                My personal website with just one page that I haven't finished
+                yet. 🥵
+              </p>
+
+              <a href="https://davidaragundy.com" target="_blank"
+                >View project</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Let's work together</h2>
+
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7662.550516706833!2d-79.96768167467694!3d-2.1467343663615854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e1!3m2!1ses!2sec!4v1730473825969!5m2!1ses!2sec"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div>
+        <span>Merry christmas! 🎅</span>
+
+        <video src="/images/a.mp4" autoplay controls></video>
+      </div>
+    </footer>
+  </body>
 </html>
